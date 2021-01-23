@@ -15,7 +15,12 @@ public class PopupController : MonoBehaviour
    public void EndPuzzle()
    {
       puzzlePanel.SetActive(false);
-      currentSpawnedPuzzle.transform.parent = null;
-      Destroy(currentSpawnedPuzzle);
+      if (currentSpawnedPuzzle != null)
+      {
+         currentSpawnedPuzzle.transform.parent = null;
+         Destroy(currentSpawnedPuzzle);
+      }
+
+      
    }
 }

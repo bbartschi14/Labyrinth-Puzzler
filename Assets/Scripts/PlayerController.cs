@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
 
             }).AddTo(this);
 
+#if !UNITY_ANDROID
         this.OnMouseDownAsObservable()
             .Subscribe(_ => arrow.enabled = true)
             .AddTo(this);
@@ -69,7 +70,7 @@ public class PlayerController : MonoBehaviour
                 ThrowSelf();
             })
             .AddTo(this);
-
+#endif
         spawnPoint = transform.position;
     }
 

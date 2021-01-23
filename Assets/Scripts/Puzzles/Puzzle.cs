@@ -6,10 +6,12 @@ public abstract class Puzzle : ScriptableObject
 {
     public int doorId;
     public abstract GameObject DisplayPuzzle(GameObject panel);
+    public abstract void SetupPuzzle();
 }
 
 public enum PuzzleType
 {
     Unscramble,
-    WordSearch
+    WordSearch,
+    Minigolf
 }

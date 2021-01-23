@@ -2,27 +2,66 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class DoorController : MonoBehaviour
+using UnityEngine.EventSystems;
+public class DoorController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private PuzzleGameEvent onPuzzleActivated;
-    private Puzzle puzzle;
     [SerializeField] private int doorId;
+    [SerializeField] private DirectionGameEvent onDirectionalMove;
+    [SerializeField] private Direction direction;
+    [Header("Visuals")]
     [SerializeField] private Material glowMat;
+    [SerializeField] private Renderer renderer;
     [SerializeField] private DoorController linkedDoor;
-    [SerializeField] private TransformGameEvent onTransportCalled;
-    [SerializeField] private GameEvent onPortalExit;
+    [SerializeField] private Color glowColor;
+    [SerializeField] private GameObject lockPrefab;
+    [Header("Puzzle Settings")]
+    [SerializeField] private bool useSpecific;
+    [SerializeField] private Puzzle specificPuzzle;
     [SerializeField] private PuzzleType puzzleType;
+    
     private bool isOpen = false;
+    private Puzzle puzzle;
+    private GameObject lockObject;
     private void Start()
     {
-        puzzle = PuzzleGenerator.Instance.GeneratePuzzle(puzzleType);
+        puzzle = PuzzleGenerator.Instance.GeneratePuzzle(puzzleType, useSpecific, specificPuzzle);
         puzzle.doorId = doorId;
+        puzzle.SetupPuzzle();
+        lockObject = Instantiate(lockPrefab, transform);
+        lockObject.transform.position = transform.position;
+        lockObject.transform.Translate(new Vector3(-.5f, 1.25f, 0f));
+        LeanTween.moveY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OpenDoor(int i)
     {
-        //Debug.Log(other.gameObject.name + " has enter trigger of " + gameObject.name);
+        if (i == doorId)
+        {
+            Debug.Log("Door " + i + " opened!");
+            ForceOpen();
+
+            if (linkedDoor != null) Transport();
+        }
+    }
+
+
+    public void ForceOpen()
+    {
+        GetComponent<Renderer>().material = glowMat;
+        if (lockObject != null) LeanTween.scale(lockObject, Vector3.zero, .15f)
+            .setEaseInCubic().setOnComplete(_ => Destroy(lockObject));
+        isOpen = true;
+    }
+
+    private void Transport()
+    {
+        linkedDoor.ForceOpen();
+        onDirectionalMove.Raise(this.direction);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
         if (!isOpen)
         {
             onPuzzleActivated.Raise(this.puzzle);
@@ -36,34 +75,13 @@ public class DoorController : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        if (isOpen)
-        {
-            onPortalExit.Raise();
-        }
+        renderer.material.SetColor("_GlowColor", glowColor);
     }
 
-    public void OpenDoor(int i)
+    public void OnPointerExit(PointerEventData eventData)
     {
-        if (i == doorId)
-        {
-            Debug.Log("Door " + i + " opened!");
-            ForceOpen();
-            if (linkedDoor != null) Transport();
-        }
-    }
-
-
-    public void ForceOpen()
-    {
-        GetComponent<Renderer>().material = glowMat;
-        isOpen = true;
-    }
-
-    private void Transport()
-    {
-        linkedDoor.ForceOpen();
-        onTransportCalled.Raise(linkedDoor.transform);
+        renderer.material = glowMat;
     }
 }

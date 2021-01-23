@@ -9,9 +9,12 @@ public class UnscrambleAnswer : MonoBehaviour
     public TMPro.TextMeshProUGUI answerText;
     public int currentIndex = 0;
     public int maxLength;
-    
+    private List<UnscrambleButton> usedButtons = new List<UnscrambleButton>();
+
+
     public void InitializeBlank(int length)
     {
+        ResetButtons();
         answerText.text = new String('_', length);
         currentIndex = 0;
         this.maxLength = length;
@@ -21,13 +24,14 @@ public class UnscrambleAnswer : MonoBehaviour
         }
     }
 
-    public void AddLetter(string c)
+    public void AddLetter(string c, UnscrambleButton button)
     {
         if (currentIndex >= maxLength)
         {
             return;
         }
-        
+        usedButtons.Add(button);
+
         //Debug.Log("adding " + c + " at " + currentIndex);
         answerText.text = Overwrite(answerText.text, currentIndex, c);
         currentIndex++;
@@ -44,6 +48,9 @@ public class UnscrambleAnswer : MonoBehaviour
         {
             return;
         }
+        usedButtons[usedButtons.Count-1].Reset();
+        usedButtons.RemoveAt(usedButtons.Count-1);
+
         currentIndex--;
         //Debug.Log("adding " + c + " at " + currentIndex);
         answerText.text = Overwrite(answerText.text, currentIndex, "_");
@@ -52,6 +59,16 @@ public class UnscrambleAnswer : MonoBehaviour
     public string Overwrite(string text, int position, string new_text)
     {
         return text.Substring(0, position) + new_text + text.Substring(position + new_text.Length);
+    }
+
+    private void ResetButtons()
+    {
+        foreach (var button in usedButtons)
+        {
+            button.Reset();
+        }
+        usedButtons.Clear();
+
     }
 }
 

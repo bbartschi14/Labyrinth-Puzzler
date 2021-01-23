@@ -13,4 +13,8 @@ public class WordSearch : Puzzle
         panelComponent.FormatPanel(this);
         return puzzleObj;
     }
+
+    public override void SetupPuzzle()
+    {
+    }
 }

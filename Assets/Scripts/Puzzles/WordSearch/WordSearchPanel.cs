@@ -50,7 +50,7 @@ public class WordSearchPanel : MonoBehaviour
         int letterIndex = 0;
         foreach (Vector2Int loc in wordLocations)
         {
-            Debug.Log(loc);
+            //Debug.Log(loc);
             searchArea.transform.GetChild(CoordToIndex(loc)).GetComponent<WordSearchTile>().SetText(word[letterIndex]);
             letterIndex++;
         }

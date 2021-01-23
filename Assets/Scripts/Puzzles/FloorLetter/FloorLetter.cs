@@ -15,4 +15,8 @@ public class FloorLetter : Puzzle
         panelComponent.FormatPanel(this);
         return puzzleObj;
     }
+
+    public override void SetupPuzzle()
+    {
+    }
 }

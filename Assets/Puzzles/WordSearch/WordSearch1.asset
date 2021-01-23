@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorId: 0
   wordSearchPrefab: {fileID: 4027212966473489587, guid: 21b75a46c1279014087676067dc95657, type: 3}
-  wordToFind: key
+  wordToFind: ball

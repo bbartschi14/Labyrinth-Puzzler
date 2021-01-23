@@ -6,9 +6,14 @@ public class PuzzleGenerator : Singleton<PuzzleGenerator>
 {
     [SerializeField] private List<Unscramble> unscramblePuzzles;
     [SerializeField] private List<WordSearch> wordSearchPuzzles;
-
-    public Puzzle GeneratePuzzle(PuzzleType type)
+    
+    public Puzzle GeneratePuzzle(PuzzleType type, bool useSpecific, Puzzle specificPuzzle)
     {
+        if (useSpecific)
+        {
+            return Instantiate(specificPuzzle);
+        }
+        
         switch (type)
         {
             case PuzzleType.Unscramble:

@@ -1,38 +1,62 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : Singleton<CameraController>
 {
-    [SerializeField] private float gridSize;
-    private Vector3 currentRoomPoint = new Vector3(8f, 0f, 8f);
-    public void MoveToNewRoom(Transform newRoom)
+    [SerializeField] private Vector2 gridSize;
+    [SerializeField] private Vector2 currentGridCoordinate;
+    [SerializeField] private Vector2GameEvent onMovedToNewRoom;
+
+    private void Start()
     {
-        Vector3 posDelta = newRoom.position - currentRoomPoint;
-        int maxIndex = MaxOfVec3(posDelta);
-        Vector3 delta = Vector3.zero;
-        delta[maxIndex] = 1.0f * (posDelta[maxIndex]/Mathf.Abs(posDelta[maxIndex])); 
-        Vector3 newPos = transform.position + delta * gridSize;
-        currentRoomPoint += delta * gridSize;
+        MoveToNewRoom(currentGridCoordinate);
+        onMovedToNewRoom.Raise(currentGridCoordinate);
+        
+    }
+
+    public void MoveToNewRoom(Vector2 coords)
+    {
+        currentGridCoordinate = coords;
+        Vector3 newPos = new Vector3(coords.x * gridSize.x, 0f, coords.y * gridSize.y);
         LeanTween.move(gameObject, newPos, .35f).setEaseInOutCubic();
+        onMovedToNewRoom.Raise(coords);
+
     }
 
-    private int MaxOfVec3(Vector3 vec)
+    public void MoveRelative(Direction dir)
     {
-        float max = vec[0];
-        int maxIndex = 0;
-        for (int i = 1; i < 3; i++)
+        Vector2 newCoords = currentGridCoordinate;
+        switch (dir)
         {
-            if (Mathf.Abs(vec[i]) > Mathf.Abs(max))
-            {
-                max = vec[i];
-                maxIndex = i;
-            }
+            case Direction.Up:
+                newCoords += Vector2.up;
+                break;
+            case Direction.Down:
+                newCoords += Vector2.down;
+                break;
+            case Direction.Left:
+                newCoords += Vector2.left;
+                break;
+            case Direction.Right:
+                newCoords += Vector2.right;
+                break;
+            default:
+                break;
         }
-
-        return maxIndex;
+        MoveToNewRoom(newCoords);
     }
-    
+
 }
+
+public enum Direction
+{
+    Up,
+    Down,
+    Left,
+    Right
+}
+
 
 

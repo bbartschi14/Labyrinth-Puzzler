@@ -14,12 +14,13 @@ public class UnscramblePanel : MonoBehaviour
     [SerializeField] private GameObject hintButton;
     [SerializeField] private Button eraseButton;
     [SerializeField] private IntVariable magicCount;
-    
     [SerializeField] private IntGameEvent onPuzzleCorrect;
     
     private Unscramble puzzle;
     private List<int> scrambleIndices;
     private List<Transform> letterButtons = new List<Transform>();
+    private UnscrambleButton missingButton;
+
     public void FormatPanel(Unscramble puzzle)
     {
         this.puzzle = puzzle;
@@ -27,6 +28,8 @@ public class UnscramblePanel : MonoBehaviour
         ResetAnswerField();
         List<int> shuffledIndices = Shuffle(puzzle.answer);
         scrambleIndices = shuffledIndices;
+        bool removed = false;
+        
         foreach (int i in shuffledIndices)
         {
             char c = puzzle.answer[i];
@@ -36,15 +39,44 @@ public class UnscramblePanel : MonoBehaviour
             puzzleButton.SetupButton(c, answerField);
             puzzleButton.Resize(puzzle.answer.Length);
             letterButtons.Add(puzzleButton.transform);
+
+            if (puzzle.isMissingLetter && puzzle.missingLetter == c && !removed)
+            {
+                removed = true;
+                puzzleButton.ToggleAvailable(false);
+                missingButton = puzzleButton;
+            }
         }
-        
-        hintButton.GetComponent<Button>().OnClickAsObservable()
-            .Subscribe(_ => UseHint())
-            .AddTo(this);
-        
+
         eraseButton.OnClickAsObservable()
-            .Subscribe(_ => answerField.RemoveLetter())
+            .Subscribe(_ =>
+            {
+                answerField.RemoveLetter();
+            })
             .AddTo(this);
+        
+        if (puzzle.isMissingLetter)
+        {
+            CheckForMissingLetter();
+        }
+    }
+
+    private void CheckForMissingLetter()
+    {
+        GameObject tileNeeded = ItemContainer.Instance.GetTile(puzzle.missingLetter);
+        if (tileNeeded != null)
+        {
+            ItemContainer.Instance.RemoveTile(tileNeeded);
+            puzzle.isMissingLetter = false; 
+            Image im = missingButton.GetComponent<Image>();
+            Color toColor = im.color;
+            LeanTween.value(gameObject, color => im.color = color, Color.green, toColor, .8f)
+                .setEaseOutBounce().setOnComplete(_ =>
+                {
+                    missingButton.ToggleAvailable(true);
+                    LeanTween.value(gameObject, color => im.color = color, Color.green, toColor, .6f)
+                        .setEaseOutCubic();
+                });        }
     }
 
     private void UseHint()
