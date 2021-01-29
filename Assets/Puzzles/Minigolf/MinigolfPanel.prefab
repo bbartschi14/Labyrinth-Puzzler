@@ -211,7 +211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Complete the minigolf round!
+  m_text: Complete the ground puzzle!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e663693e3852fed4a90d3c26a4f3a7c2, type: 2}
   m_sharedMaterial: {fileID: 7500090057462293412, guid: e663693e3852fed4a90d3c26a4f3a7c2, type: 2}

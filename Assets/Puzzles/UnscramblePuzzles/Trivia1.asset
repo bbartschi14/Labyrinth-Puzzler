@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Trivia1
   m_EditorClassIdentifier: 
   doorId: 0
+  snackBarEvent: {fileID: 11400000, guid: 0e8e724e57800534b85ff0db1d28ca75, type: 2}
   unscramblePrefab: {fileID: 4027212966473489587, guid: 9e1801a85737271409d38b2d9b63204e, type: 3}
   clue: What is ten plus ten?
   answer: TWENTY
+  isMissingLetter: 0
+  missingLetter: 0

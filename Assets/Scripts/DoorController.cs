@@ -9,6 +9,7 @@ public class DoorController : MonoBehaviour, IPointerClickHandler, IPointerEnter
     [SerializeField] private int doorId;
     [SerializeField] private DirectionGameEvent onDirectionalMove;
     [SerializeField] private Direction direction;
+    [SerializeField] private bool dontMoveOnComplete;
     [Header("Visuals")]
     [SerializeField] private Material glowMat;
     [SerializeField] private Renderer renderer;
@@ -31,7 +32,7 @@ public class DoorController : MonoBehaviour, IPointerClickHandler, IPointerEnter
         lockObject = Instantiate(lockPrefab, transform);
         lockObject.transform.position = transform.position;
         lockObject.transform.Translate(new Vector3(-.5f, 1.25f, 0f));
-        LeanTween.moveY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
+        LeanTween.moveLocalY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
     }
 
     public void OpenDoor(int i)
@@ -40,8 +41,8 @@ public class DoorController : MonoBehaviour, IPointerClickHandler, IPointerEnter
         {
             Debug.Log("Door " + i + " opened!");
             ForceOpen();
-
-            if (linkedDoor != null) Transport();
+            
+            if (linkedDoor != null && !dontMoveOnComplete) Transport();
         }
     }
 

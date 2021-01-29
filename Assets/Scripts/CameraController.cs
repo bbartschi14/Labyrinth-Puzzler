@@ -8,12 +8,11 @@ public class CameraController : Singleton<CameraController>
     [SerializeField] private Vector2 gridSize;
     [SerializeField] private Vector2 currentGridCoordinate;
     [SerializeField] private Vector2GameEvent onMovedToNewRoom;
-
     private void Start()
     {
         MoveToNewRoom(currentGridCoordinate);
         onMovedToNewRoom.Raise(currentGridCoordinate);
-        
+
     }
 
     public void MoveToNewRoom(Vector2 coords)
@@ -22,7 +21,6 @@ public class CameraController : Singleton<CameraController>
         Vector3 newPos = new Vector3(coords.x * gridSize.x, 0f, coords.y * gridSize.y);
         LeanTween.move(gameObject, newPos, .35f).setEaseInOutCubic();
         onMovedToNewRoom.Raise(coords);
-
     }
 
     public void MoveRelative(Direction dir)

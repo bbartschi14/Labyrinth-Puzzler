@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UniRx.Triggers;
 using UniRx;
 
-public class WordSearchTile : UIBehaviour, IDragHandler
+public class WordSearchTile : UIBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private TMPro.TextMeshProUGUI tileText;
     [SerializeField] private WordSearchPanel mainPanel;
@@ -25,10 +25,13 @@ public class WordSearchTile : UIBehaviour, IDragHandler
     public void Setup()
     {
         siblingIndex = transform.GetSiblingIndex();
-
+        this.OnPointerDownAsObservable().Subscribe(pointer =>
+        {
+            mainPanel.UpdateCircle(siblingIndex, 0);
+        }).AddTo(this);
+        
         this.OnBeginDragAsObservable().Subscribe(pointer =>
         {
-            mainPanel.SetLine(true);
         }).AddTo(this);
         
         this.OnDragAsObservable().Subscribe(pointer =>
@@ -48,15 +51,33 @@ public class WordSearchTile : UIBehaviour, IDragHandler
             }
             
         }).AddTo(this);
+        
         this.OnEndDragAsObservable().Subscribe(pointer =>
         {
             mainPanel.SetLine(false);
             mainPanel.CheckPuzzle();
+        }).AddTo(this);
+        
+        this.OnPointerUpAsObservable().Subscribe(pointer =>
+        {
+            mainPanel.DeactivateCircle(0);
+            mainPanel.DeactivateCircle(1);
+
         }).AddTo(this);
 
     }
     
     public void OnDrag(PointerEventData eventData)
     {
+    }
+    
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        
     }
 }

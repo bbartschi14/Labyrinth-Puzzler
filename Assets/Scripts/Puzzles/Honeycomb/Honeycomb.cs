@@ -19,4 +19,9 @@ public class Honeycomb : Puzzle
     public override void SetupPuzzle()
     {
     }
+    
+    public override void ShowToast()
+    {
+        
+    }
 }

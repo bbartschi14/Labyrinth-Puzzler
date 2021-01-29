@@ -17,4 +17,9 @@ public class WordSearch : Puzzle
     public override void SetupPuzzle()
     {
     }
+
+    public override void ShowToast()
+    {
+        
+    }
 }

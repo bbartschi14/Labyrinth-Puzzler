@@ -19,4 +19,9 @@ public class Minigolf : Puzzle
     {
     }
     
+    public override void ShowToast()
+    {
+        
+    }
+    
 }

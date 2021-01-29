@@ -24,7 +24,8 @@ public class UnscramblePanel : MonoBehaviour
     public void FormatPanel(Unscramble puzzle)
     {
         this.puzzle = puzzle;
-        clueTextField.text = puzzle.clue;
+        puzzle.answer = puzzle.answer.ToUpper();
+        clueTextField.text = "\"" + puzzle.clue + "\"";
         ResetAnswerField();
         List<int> shuffledIndices = Shuffle(puzzle.answer);
         scrambleIndices = shuffledIndices;

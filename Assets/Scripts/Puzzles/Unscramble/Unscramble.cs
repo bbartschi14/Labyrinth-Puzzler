@@ -22,4 +22,12 @@ public class Unscramble : Puzzle
     public override void SetupPuzzle()
     {
     }
+    
+    public override void ShowToast()
+    {
+        if (isMissingLetter)
+        {
+            snackBarEvent.Raise("This puzzle is missing a letter. Find it somewhere in the level!");
+        }
+    }
 }

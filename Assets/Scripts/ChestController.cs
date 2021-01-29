@@ -29,7 +29,7 @@ public class ChestController : Clickable
         lockObject = Instantiate(lockPrefab, transform);
         lockObject.transform.position = transform.position;
         lockObject.transform.Translate(new Vector3(-.5f, 1.25f, 0f));
-        LeanTween.moveY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
+        LeanTween.moveLocalY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
     }
 
     public override void Clicked()

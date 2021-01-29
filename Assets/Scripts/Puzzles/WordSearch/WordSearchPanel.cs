@@ -14,7 +14,7 @@ public class WordSearchPanel : MonoBehaviour
     [SerializeField] private GameObject searchArea;
     [SerializeField] private UILineRenderer line;
     [SerializeField] private IntGameEvent onPuzzleCorrect;
-
+    [SerializeField] private List<GameObject> circles;
     private WordSearch puzzle;
     private Vector2Int linePoints;
     private Vector2Int solutionPoints;
@@ -24,8 +24,8 @@ public class WordSearchPanel : MonoBehaviour
     public void FormatPanel(WordSearch puzzle)
     {
         this.puzzle = puzzle;
-        clueText.text += puzzle.wordToFind;
-        string word = puzzle.wordToFind;
+        clueText.text += puzzle.wordToFind.ToUpper();
+        string word = puzzle.wordToFind.ToUpper();
 
         for (int row = 0; row < size; row++)
         {
@@ -106,6 +106,19 @@ public class WordSearchPanel : MonoBehaviour
         line.enabled = val;
     }
 
+    public void UpdateCircle(int index, int circle)
+    {
+        GameObject c = circles[circle];
+        c.SetActive(true);
+        c.transform.position = searchArea.transform.GetChild(index).position;
+    }
+
+    public void DeactivateCircle(int i)
+    {
+        
+        circles[i].SetActive(false);
+    }
+
     public void UpdateLine(int startIndex, int endIndex)
     {
         // Check if vertical, horizontal, or diagonal line. Others are not valid
@@ -117,12 +130,15 @@ public class WordSearchPanel : MonoBehaviour
         {
             if (diff1 != diff2) return;
         }
-        
+        SetLine(true);
+
         // Update line position
         linePoints = new Vector2Int(startIndex, endIndex);
         List<Vector2> points = new List<Vector2>();
         points.Add(IndexToLineCoord(startIndex));
         points.Add(IndexToLineCoord(endIndex));
+        if (endIndex != startIndex) UpdateCircle(endIndex, 1);
+        else DeactivateCircle(1);
         line.points = points;
         line.SetAllDirty();
     }
@@ -163,7 +179,7 @@ public class WordSearchPanel : MonoBehaviour
     }
     private char RandomLetter()
     {
-        string st = "abcdefghijklmnopqrstuvwxyz";
+        string st = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         return st[UnityEngine.Random.Range(0,st.Length)];
     }
 
