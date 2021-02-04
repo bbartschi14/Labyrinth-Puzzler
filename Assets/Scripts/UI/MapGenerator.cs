@@ -7,8 +7,12 @@ public class MapGenerator : MonoBehaviour
 {
     [SerializeField] private Color activeColor;
     [SerializeField] private Color normalColor;
+    [SerializeField] private Color visitedColor;
+
     [SerializeField] private Vector2Int mapSize;
     [SerializeField] private List<Vector2Int> activeCells;
+    [SerializeField] private List<Vector2Int> visitedCells;
+
     private Vector2Int activeCell;
     
     
@@ -36,9 +40,16 @@ public class MapGenerator : MonoBehaviour
         }
     }
 
+    public void ResetMap()
+    {
+        SetupMap();
+        SetActiveCell(new Vector2(activeCell.y, activeCell.x));
+    }
+
     public void SetActiveCell(Vector2 cell)
     {
-        transform.GetChild(activeCell.x).GetChild(activeCell.y).GetComponent<Image>().color = normalColor;
+        //visitedCells.Add(new Vector2Int((int)cell.x, (int)cell.y));
+        transform.GetChild(activeCell.x).GetChild(activeCell.y).GetComponent<Image>().color = visitedColor;
         
         activeCell = new Vector2Int((int) cell.y, (int) cell.x);
         transform.GetChild(activeCell.x).GetChild(activeCell.y).GetComponent<Image>().color = activeColor;

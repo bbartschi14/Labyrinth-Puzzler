@@ -18,10 +18,13 @@ public class RockObject : UIBehaviour, IDragHandler
     private Camera cam;
     private Vector2 direction;
     private bool interactable = true;
+    private Vector3 initialPos;
+    private Vector2 initialGrid;
     private void Start()
     {
         cam = Camera.main;
-        
+        initialPos = transform.localPosition;
+        initialGrid = position;
         this.OnBeginDragAsObservable().Subscribe(_ =>
             {
                 if (interactable) arrow.enabled = true;
@@ -45,6 +48,16 @@ public class RockObject : UIBehaviour, IDragHandler
                 Move();
             }
         }).AddTo(this);
+    }
+
+    public void ResetRock()
+    {
+        if (interactable)
+        {
+            transform.localPosition = initialPos;
+            position = initialGrid;
+        }
+        
     }
 
     private void Move()

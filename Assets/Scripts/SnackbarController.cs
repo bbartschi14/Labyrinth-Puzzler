@@ -26,6 +26,6 @@ public class SnackbarController : MonoBehaviour
 
     public void CloseBar()
     {
-        LeanTween.moveY(gameObject, -rt.sizeDelta.y, .3f);
+        LeanTween.moveY(gameObject, -rt.sizeDelta.y*1.5f, .3f);
     }
 }

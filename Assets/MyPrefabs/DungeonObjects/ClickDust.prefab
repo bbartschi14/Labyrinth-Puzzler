@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8520590615458669582}
   - component: {fileID: 8520590615458669583}
   - component: {fileID: 8520590615458669576}
-  m_Layer: 0
-  m_Name: Particle System
+  m_Layer: 7
+  m_Name: ClickDust
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

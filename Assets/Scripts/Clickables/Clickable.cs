@@ -28,7 +28,6 @@ public class Clickable : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         if ( itemsCount > 0)
         {
             SpawnItem();
-            itemsCount -= 1;
         }
         if (itemsCount == 0)
         {
@@ -42,12 +41,17 @@ public class Clickable : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
     public void SpawnItem()
     {
+        itemsCount -= 1;
         GameObject item = Instantiate(itemPrefab, transform.position, itemPrefab.transform.rotation);
         item.GetComponent<Item>().Collect();
         LeanTween.rotateAround(item, Vector3.up, 360, 1f).setLoopClamp();
         LeanTween.moveY(item, 3f, .5f).setEaseOutCubic().setOnComplete(_ =>
         {
             Destroy(item);
+            if (itemsCount > 0)
+            {
+                SpawnItem();
+            }
         });
         ;
     }

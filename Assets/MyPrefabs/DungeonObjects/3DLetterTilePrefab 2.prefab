@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7095004617325920053}
   - component: {fileID: 88258434725137154}
   - component: {fileID: 5998963791809516492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 3DLetterTilePrefab 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

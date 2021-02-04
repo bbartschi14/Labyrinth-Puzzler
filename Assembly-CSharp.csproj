@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Events\StringGameEventListener.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Puzzles\FloorLetter\FloorLetterAnswer.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Honeycomb\HoneycombButton.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\LeanTween\Framework\LeanTweenExt.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Unscramble\UnscrambleAnswer.cs" />
      <Compile Include="Assets\Scripts\CosmeticClickHandler.cs" />
+     <Compile Include="Assets\Scripts\LightMap\LightmapBase.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Minigolf\GolfBallController.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingPunch.cs" />
@@ -75,9 +77,11 @@
      <Compile Include="Assets\Scripts\Puzzles\Honeycomb\Honeycomb.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanAudio.cs" />
+     <Compile Include="Assets\Scripts\GravitySink.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Unscramble\UnscrambleButton.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Honeycomb\HoneycombPanel.cs" />
      <Compile Include="Assets\Scripts\Events\TransformGameEventListener.cs" />
+     <Compile Include="Assets\Scripts\GameCompleteController.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
      <Compile Include="Assets\Scripts\Puzzles\WordSearch\WordSearch.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Unscramble\Unscramble.cs" />
@@ -92,6 +96,8 @@
      <Compile Include="Assets\Scripts\Events\CharGameEvent.cs" />
      <Compile Include="Assets\Scripts\Events\DirectionGameEventListener.cs" />
      <Compile Include="Assets\Scripts\Items\Coin.cs" />
+     <Compile Include="Assets\Scripts\LadderController.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Minigolf\GolfballRespawner.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Puzzle.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanSmooth.cs" />
@@ -114,6 +120,7 @@
      <Compile Include="Assets\Scripts\Events\IntGameEventListener.cs" />
      <Compile Include="Assets\LeanTween\Framework\LeanTest.cs" />
      <Compile Include="Assets\Scripts\FloorsController.cs" />
+     <Compile Include="Assets\Scripts\Events\StringGameEvent.cs" />
      <Compile Include="Assets\Scripts\ChestController.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
      <Compile Include="Assets\Scripts\Puzzles\Rock\RockGoal.cs" />
@@ -128,6 +135,7 @@
      <Compile Include="Assets\Scripts\GameOverController.cs" />
      <Compile Include="Assets\Scripts\UI\ItemContainer.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
+     <Compile Include="Assets\Scripts\SnackbarController.cs" />
      <Compile Include="Assets\Scripts\Events\CharGameEventListener.cs" />
      <Compile Include="Assets\Scripts\DoorController.cs" />
      <Compile Include="Assets\Free Assets\GlowShader\Scripts\GlowComposite.cs" />
@@ -147,14 +155,20 @@
      <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralBasic.cs" />
      <Compile Include="Assets\Scripts\Puzzles\FloorLetter\FloorLetter.cs" />
      <Compile Include="Assets\Scripts\PlatformController.cs" />
+     <Compile Include="Assets\Scripts\LightMap\LightmapPrefab.cs" />
      <Compile Include="Assets\Scripts\Singleton.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
      <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
      <Compile Include="Assets\Scripts\UI\ScreenFitter.cs" />
-     <Compile Include="Assets\Scripts\SnackbarController.cs" />
-     <Compile Include="Assets\Scripts\Events\StringGameEvent.cs" />
-     <Compile Include="Assets\Scripts\Events\StringGameEventListener.cs" />
-     <Compile Include="Assets\Scripts\LadderController.cs" />
+     <Compile Include="Assets\Scripts\PointerController.cs" />
+     <Compile Include="Assets\Scripts\FloorMessages.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Minigolf\MinigolfReset.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Minigolf\GolfPanel.cs" />
+     <Compile Include="Assets\Scripts\GameStartPanel.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Minigolf\ToastCollider.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Rock\RockPanel.cs" />
+     <Compile Include="Assets\Scripts\Puzzles\Rock\RockReset.cs" />
+     <Compile Include="Assets\Scripts\ChestAnimator.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\LeanTween\ReadMe.txt" />
@@ -775,6 +789,9 @@
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.DeviceSimulator.Editor">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
@@ -790,8 +807,17 @@
  <Reference Include="Unity.DeviceSimulator.Tests.Common">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
  </Reference>
- <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <Reference Include="Unity.InternalAPIEditorBridge.003">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VectorGraphics">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEngineBridge.003">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.003.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VectorGraphics.Editor">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

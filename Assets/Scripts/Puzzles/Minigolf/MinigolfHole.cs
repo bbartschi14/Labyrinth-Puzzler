@@ -7,10 +7,23 @@ public class MinigolfHole : MonoBehaviour
 {
     public int doorId;
     public IntGameEvent onPuzzleCorrect;
-
+    public bool isTreasure;
+    public int maxStrokes;
     private void OnTriggerEnter(Collider other)
     {
-        onPuzzleCorrect.Raise(doorId);
+        if (!other.isTrigger)
+        {
+            if (isTreasure)
+            {
+                if (other.GetComponent<GolfBallController>().GetStrokes() <= maxStrokes)
+                {
+                    onPuzzleCorrect.Raise(doorId);
+                }
+            } else
+            {
+                onPuzzleCorrect.Raise(doorId);
+            }
+        }
     }
 
     public void SetId(int i)

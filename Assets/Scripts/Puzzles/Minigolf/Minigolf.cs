@@ -8,10 +8,12 @@ using UnityEngine;
 public class Minigolf : Puzzle
 {
     public GameObject minigolfPrefab;
-
+    public bool requireStrokeCount;
+    public int maxStrokeCount;
     public override GameObject DisplayPuzzle(GameObject panel)
     {
         GameObject puzzleObj = Instantiate(minigolfPrefab, panel.transform);
+        puzzleObj.GetComponent<GolfPanel>().FormatPanel(this);
         return puzzleObj;
     }
 

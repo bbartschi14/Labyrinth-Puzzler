@@ -598,7 +598,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 805284a92cf9fc844a7862394c823313, type: 2}
   nonGlowMaterial: {fileID: 2100000, guid: 18f63ff904099034daf971dac5b32582, type: 2}
   renderer: {fileID: 2420318208280203780}
-  itemPrefab: {fileID: 7431308828292669375, guid: a060bcb0704930e4ab393084d951bd20, type: 3}
+  itemPrefab: {fileID: 279313157496963826, guid: 8f02ce9feff139b40b8eeb439947c827, type: 3}
   magicCount: {fileID: 11400000, guid: 392c9ec1f7f06cb48978cf93c3c4ca89, type: 2}
   itemsCount: 1
   rotationPoint: {fileID: 7025447066355560669}
@@ -655,7 +655,7 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 805284a92cf9fc844a7862394c823313, type: 2}
   nonGlowMaterial: {fileID: 2100000, guid: 18f63ff904099034daf971dac5b32582, type: 2}
   renderer: {fileID: 2420318207275147497}
-  itemPrefab: {fileID: 279313157496963826, guid: 8f02ce9feff139b40b8eeb439947c827, type: 3}
+  itemPrefab: {fileID: 7431308828292669375, guid: a060bcb0704930e4ab393084d951bd20, type: 3}
   magicCount: {fileID: 11400000, guid: 392c9ec1f7f06cb48978cf93c3c4ca89, type: 2}
   itemsCount: 1
   rotationPoint: {fileID: 7025447065786456488}
@@ -1086,7 +1086,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1274,7 +1274,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1368,7 +1368,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7025447064695202330
 Transform:
@@ -1435,7 +1435,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1588,7 +1588,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1905,7 +1905,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1998,7 +1998,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2263,7 +2263,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2435,7 +2435,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2492,7 +2492,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7025447065109737806
 Transform:
@@ -2559,7 +2559,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -2827,7 +2827,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7025447065157493413
 Transform:
@@ -3176,7 +3176,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3364,7 +3364,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3491,7 +3491,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3646,7 +3646,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3818,7 +3818,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3911,7 +3911,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4004,7 +4004,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4259,7 +4259,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4383,7 +4383,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4796,7 +4796,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5019,7 +5019,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5112,7 +5112,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5308,7 +5308,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5524,7 +5524,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5651,7 +5651,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5823,7 +5823,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5916,7 +5916,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6043,7 +6043,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6169,7 +6169,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6262,7 +6262,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6385,7 +6385,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6478,7 +6478,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6643,7 +6643,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -6832,7 +6832,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -7257,7 +7257,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7025447066360085147
 Transform:
@@ -7398,7 +7398,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -7628,7 +7628,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7025447066514931898
 Transform:
@@ -8034,7 +8034,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8158,7 +8158,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8232,8 +8232,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066671059028}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: d0aada1b6cfb82a47841681c82821543, type: 2}
   puzzleType: 1
 --- !u!65 &7025447065288459980
 BoxCollider:
@@ -8270,8 +8270,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447064922219865}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: d66681d35189c0c499bcc0181f79f84a, type: 2}
   puzzleType: 1
 --- !u!114 &7025447065288459981
 MonoBehaviour:
@@ -8365,7 +8365,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 0
-  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 024f57a467240d949af22697cc319e01, type: 2}
   puzzleType: 0
 --- !u!65 &7025447065173324352
 BoxCollider:
@@ -8431,7 +8431,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: f2a8d57cd59e61f4487e26a5893c4e19, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 024f57a467240d949af22697cc319e01, type: 2}
   puzzleType: 1
 --- !u!65 &7025447066671059026
 BoxCollider:
@@ -8496,8 +8496,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447064740927657}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: d0aada1b6cfb82a47841681c82821543, type: 2}
   puzzleType: 1
 --- !u!65 &7025447064700204828
 BoxCollider:
@@ -8535,7 +8535,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: f6eee3b3a4a03354d9d32d8555ccf666, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 37f46c9cc01e2f8479418fc18e98b6c6, type: 2}
   puzzleType: 1
 --- !u!114 &7025447064700204830
 MonoBehaviour:
@@ -8628,8 +8628,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066264010317}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: f2a8d57cd59e61f4487e26a5893c4e19, type: 2}
   puzzleType: 1
 --- !u!65 &7025447065383233523
 BoxCollider:
@@ -8761,7 +8761,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 1ba48aad5f58ee94a9f57a89ca8469b5, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 349c25a087cb7474ca2c6ded30e2237f, type: 2}
   puzzleType: 1
 --- !u!65 &7025447066324639849
 BoxCollider:
@@ -8798,8 +8798,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066542003424}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: 714617405c5a63749840f200f6ef4070, type: 2}
   puzzleType: 1
 --- !u!114 &7025447066324639851
 MonoBehaviour:
@@ -8864,8 +8864,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447064824195817}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: 38ab78a5285b24c459696412faf5f46f, type: 2}
   puzzleType: 1
 --- !u!114 &7025447066003556335
 MonoBehaviour:
@@ -8931,8 +8931,8 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 024f57a467240d949af22697cc319e01, type: 2}
-  puzzleType: 1
+  specificPuzzle: {fileID: 11400000, guid: ee782e30f83394e419677686a022120b, type: 2}
+  puzzleType: 0
 --- !u!114 &7025447065731433383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9194,8 +9194,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066324639850}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: 12732c264ae3f314e8c19a3d34d16849, type: 2}
   puzzleType: 1
 --- !u!114 &7025447066542003454
 MonoBehaviour:
@@ -9260,8 +9260,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066411855800}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: b30636f7068cfc444a94eb73e67b7e02, type: 2}
   puzzleType: 1
 --- !u!114 &7025447065879470477
 MonoBehaviour:
@@ -9326,8 +9326,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066293492671}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: 357deda9f3bcb6640be447d7bc3341eb, type: 2}
   puzzleType: 1
 --- !u!114 &7025447065050468075
 MonoBehaviour:
@@ -9393,8 +9393,8 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 349c25a087cb7474ca2c6ded30e2237f, type: 2}
-  puzzleType: 0
+  specificPuzzle: {fileID: 11400000, guid: 1ba48aad5f58ee94a9f57a89ca8469b5, type: 2}
+  puzzleType: 1
 --- !u!114 &7025447064922219867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9458,8 +9458,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447066507953325}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: f86f93391a3aecd498f36ccfa595f9a7, type: 2}
   puzzleType: 1
 --- !u!114 &7025447065972035365
 MonoBehaviour:
@@ -9552,8 +9552,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447065879470476}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: b30636f7068cfc444a94eb73e67b7e02, type: 2}
   puzzleType: 1
 --- !u!65 &7025447066625625682
 BoxCollider:
@@ -9618,8 +9618,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447065041477458}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: 02bc8657c9b9edc46a1f4122c6758f0d, type: 2}
   puzzleType: 1
 --- !u!65 &7025447065041477456
 BoxCollider:
@@ -9685,7 +9685,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: ee782e30f83394e419677686a022120b, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 659ef7455aba66646a316c037a7d23d9, type: 2}
   puzzleType: 0
 --- !u!65 &7025447066507953321
 BoxCollider:
@@ -9750,8 +9750,8 @@ MonoBehaviour:
   linkedDoor: {fileID: 7025447065972035364}
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
-  useSpecific: 0
-  specificPuzzle: {fileID: 0}
+  useSpecific: 1
+  specificPuzzle: {fileID: 11400000, guid: f86f93391a3aecd498f36ccfa595f9a7, type: 2}
   puzzleType: 1
 --- !u!1001 &407765687133715395
 PrefabInstance:
@@ -9766,12 +9766,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7025447066063531297, guid: ab59c9e4b324209428990c9ae5cd2b30, type: 3}
       propertyPath: useSpecific
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7025447066063531297, guid: ab59c9e4b324209428990c9ae5cd2b30, type: 3}
       propertyPath: specificPuzzle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: a3f121949615db549bb65c9b92e8a666, type: 2}
     - target: {fileID: 7266499007938240258, guid: ab59c9e4b324209428990c9ae5cd2b30, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -9899,6 +9899,10 @@ PrefabInstance:
     - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_Name
       value: Wall_27 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
@@ -10350,6 +10354,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_27 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -10656,6 +10664,10 @@ PrefabInstance:
     - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
       propertyPath: m_Name
       value: Column_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
@@ -11116,6 +11128,10 @@ PrefabInstance:
     - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_Name
       value: Wall_27 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
@@ -12484,6 +12500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1528194368290899571, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -12954,6 +12974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pot_01
       objectReference: {fileID: 0}
+    - target: {fileID: 2508803079818082220, guid: 616fdaa7dbff40e4f91c695be15f9f4f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5125010707129076267, guid: 616fdaa7dbff40e4f91c695be15f9f4f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13336,6 +13360,10 @@ PrefabInstance:
     - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
       propertyPath: m_Name
       value: Light_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
@@ -14262,6 +14290,10 @@ PrefabInstance:
     - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
       propertyPath: m_Name
       value: Light_08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
@@ -15807,6 +15839,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light_08 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
 --- !u!4 &5964856922496784706 stripped
@@ -16000,6 +16036,10 @@ PrefabInstance:
     - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
       propertyPath: m_Name
       value: Light_08 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8583780524957933453, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fbfbee0f9885764383291c4c5e18668, type: 3}
@@ -18291,6 +18331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 916917378494744782, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6603488554207994483, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -19068,6 +19112,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02
       objectReference: {fileID: 0}
+    - target: {fileID: 5129442236857904303, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9199318076177868339, guid: e37d55d9adae8724c9dcf1dff5b67578, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -19572,6 +19624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_27 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -19818,6 +19874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Column_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3713104444964819695, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3f7d4927009b84583c02fcbc509217, type: 3}
 --- !u!4 &7367512744186440964 stripped
@@ -19950,6 +20010,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6914334234424846123, guid: c0e095fcea4ab9d41bfa1cf75a32235c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e095fcea4ab9d41bfa1cf75a32235c, type: 3}
 --- !u!1 &4506907750169555063 stripped
@@ -20046,7 +20110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 568653527279986074, guid: c65426a375c90574a95eaaf4840e9481, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.75
+      value: -0.502
       objectReference: {fileID: 0}
     - target: {fileID: 568653527279986074, guid: c65426a375c90574a95eaaf4840e9481, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20091,6 +20155,10 @@ PrefabInstance:
     - target: {fileID: 8014036971784306386, guid: c65426a375c90574a95eaaf4840e9481, type: 3}
       propertyPath: m_Name
       value: Table_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8014036971784306386, guid: c65426a375c90574a95eaaf4840e9481, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5030100257178388136, guid: c65426a375c90574a95eaaf4840e9481, type: 3}
@@ -20600,6 +20668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 416386656469751746, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1528194368290899571, guid: 9175d08a6bdddeb48afa15d1b714d918, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20945,6 +21017,10 @@ PrefabInstance:
     - target: {fileID: 916917378494744782, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
       propertyPath: m_Name
       value: Ground_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 916917378494744782, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6603488554207994483, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
       propertyPath: m_RootOrder
@@ -21757,6 +21833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_27 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -22145,6 +22225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5275652781249614370, guid: cfb04594231799d4092ee0064447ce94, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6182452670827713600, guid: cfb04594231799d4092ee0064447ce94, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -22338,6 +22422,10 @@ PrefabInstance:
     - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_Name
       value: Wall_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779381877309823848, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9051238300485817969, guid: 2f6c4572e07a60b43b00e1c4f489a806, type: 3}
       propertyPath: m_RootOrder
@@ -22599,6 +22687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jug_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6698533136370866307, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7321029070664364311, guid: 44b00c7db33473946ad48053b41e081f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -22683,6 +22775,10 @@ PrefabInstance:
     - target: {fileID: 916917378494744782, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
       propertyPath: m_Name
       value: Ground_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 916917378494744782, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6603488554207994483, guid: 98f5378049f9b5745a77677f581b32b1, type: 3}
       propertyPath: m_RootOrder

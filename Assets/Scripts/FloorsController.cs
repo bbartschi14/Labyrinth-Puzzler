@@ -2,16 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FloorsController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> floorPrefabs = new List<GameObject>();
     [SerializeField] private int currentFloor;
+    [SerializeField] private UnityEvent<int> moveEvent;
     private GameObject currentGO;
 
     private void Start()
     {
-        LoadFloor(currentFloor);
     }
 
     private void LoadFloor(int floor)
@@ -24,13 +25,14 @@ public class FloorsController : MonoBehaviour
 
     public void ChangeToFloor(int floor)
     {
-        Debug.Log("Moving to floor " + floor);
-        GameObject old = currentGO;
-        LeanTween.moveY(old, -60f, 1f).
-            setEaseOutCubic().
-            setOnComplete(_ => Destroy(old));
+        Debug.Log("Moving to next floor " + floor);
+        moveEvent.Invoke(floor);
+        currentFloor = floor;
+        floorPrefabs[floor].SetActive(true);
+        LeanTween.moveY(gameObject, -60f*floor, 1f).
+            setEaseOutCubic()
+            .setOnComplete(_ => floorPrefabs[floor-1].SetActive(false));
         
-        LoadFloor(floor);
     }
 
     public void NextFloor()

@@ -27,9 +27,13 @@ public class UnscrambleButton : MonoBehaviour
 
     public void Resize(int numLetters)
     {
-        if (numLetters > 6)
+        if (numLetters > 8)
         {
-            rt.sizeDelta = new Vector2(80, 80);
+            rt.sizeDelta = new Vector2(70, 100);
+            buttonText.fontSize = 40;
+        } else if (numLetters > 6)
+        {
+            rt.sizeDelta = new Vector2(90, 100);
             buttonText.fontSize = 50;
         }
     }

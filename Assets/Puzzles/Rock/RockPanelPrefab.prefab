@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6931971418004862827}
   - component: {fileID: 4335177549265737575}
   - component: {fileID: 6631741289288574229}
-  - component: {fileID: 2244627018138040397}
+  - component: {fileID: 5709171413624088978}
   m_Layer: 5
   m_Name: RockPanelPrefab
   m_TagString: Untagged
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &2244627018138040397
+--- !u!114 &5709171413624088978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,17 +134,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4027212966473489587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a446d01d1f68abd418c9793d0f60e343, type: 3}
+  m_Script: {fileID: 11500000, guid: 5011c25cf971455439bc78fa3a4ebe0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueTextField: {fileID: 2600018612956815908}
-  answerField: {fileID: 0}
-  lettersContainer: {fileID: 0}
-  letterButton: {fileID: 0}
-  hintButton: {fileID: 0}
-  eraseButton: {fileID: 0}
-  magicCount: {fileID: 11400000, guid: 392c9ec1f7f06cb48978cf93c3c4ca89, type: 2}
-  onPuzzleCorrect: {fileID: 11400000, guid: 3ae90effb13c02b4791b6bd3dbc175fa, type: 2}
+  mainText: {fileID: 2600018612956815908}
 --- !u!1 &8944708902805569863
 GameObject:
   m_ObjectHideFlags: 0

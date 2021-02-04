@@ -29,7 +29,15 @@ public class ChestController : Clickable
         lockObject = Instantiate(lockPrefab, transform);
         lockObject.transform.position = transform.position;
         lockObject.transform.Translate(new Vector3(-.5f, 1.25f, 0f));
-        LeanTween.moveLocalY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
+        if (isFinalChest)
+        {
+            LeanTween.moveLocalY(lockObject, .45f, 1f).setLoopPingPong().setEaseInBack();
+        }
+        else
+        {
+            LeanTween.moveLocalY(lockObject, 1f, 1f).setLoopPingPong().setEaseInBack();
+        }
+
     }
 
     public override void Clicked()
@@ -58,8 +66,7 @@ public class ChestController : Clickable
             if (isFinalChest)
             {
                 gameOverEvent.Raise();
-            }
-            if ( itemsCount > 0)
+            } else if ( itemsCount > 0)
             {
                 SpawnItem();
                 itemsCount -= 1;

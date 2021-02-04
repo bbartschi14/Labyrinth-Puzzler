@@ -39,6 +39,14 @@ public class RockArea : MonoBehaviour
         CheckAllSolved();
     }
 
+    public void ResetAll()
+    {
+        foreach (var rock in rocks)
+        {
+            rock.ResetRock();
+        }
+    }
+
     private void CheckAllSolved()
     {
         foreach (RockGoal goal in goals)

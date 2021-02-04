@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6931971418004862827}
   - component: {fileID: 4335177549265737575}
   - component: {fileID: 6631741289288574229}
-  - component: {fileID: 2244627018138040397}
+  - component: {fileID: 3430279327204632563}
   m_Layer: 5
   m_Name: MinigolfPanel
   m_TagString: Untagged
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33873263, g: 0.34283808, b: 0.41509432, a: 0.6117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
+    m_Left: 20
+    m_Right: 20
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &2244627018138040397
+--- !u!114 &3430279327204632563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,17 +134,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4027212966473489587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a446d01d1f68abd418c9793d0f60e343, type: 3}
+  m_Script: {fileID: 11500000, guid: c59f02dac8c386643b1d2303134b503a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueTextField: {fileID: 2600018612956815908}
-  answerField: {fileID: 0}
-  lettersContainer: {fileID: 0}
-  letterButton: {fileID: 0}
-  hintButton: {fileID: 0}
-  eraseButton: {fileID: 0}
-  magicCount: {fileID: 11400000, guid: 392c9ec1f7f06cb48978cf93c3c4ca89, type: 2}
-  onPuzzleCorrect: {fileID: 11400000, guid: 3ae90effb13c02b4791b6bd3dbc175fa, type: 2}
+  mainText: {fileID: 2600018612956815908}
 --- !u!1 &8944708902805569863
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,10 +204,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Complete the ground puzzle!
+  m_text: Complete the minigolf hole!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e663693e3852fed4a90d3c26a4f3a7c2, type: 2}
-  m_sharedMaterial: {fileID: 7500090057462293412, guid: e663693e3852fed4a90d3c26a4f3a7c2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0f2c9aa8445cbe04c97ea2cc8cba9315, type: 2}
+  m_sharedMaterial: {fileID: -5513595801724523923, guid: 0f2c9aa8445cbe04c97ea2cc8cba9315, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -238,8 +231,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

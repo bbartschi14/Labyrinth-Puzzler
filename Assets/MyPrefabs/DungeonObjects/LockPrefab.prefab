@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9122388806130807130}
   - component: {fileID: 6218929117422618640}
   - component: {fileID: 7452236049921354884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8568389093960974338}
-  m_Layer: 0
-  m_Name: lock
+  m_Layer: 7
+  m_Name: LockPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -662,6 +662,9 @@
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.DeviceSimulator.Editor">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
@@ -677,8 +680,17 @@
  <Reference Include="Unity.DeviceSimulator.Tests.Common">
  <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Tests.Common.dll</HintPath>
  </Reference>
- <Reference Include="Unity.DeviceSimulator.Editor">
- <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.DeviceSimulator.Editor.dll</HintPath>
+ <Reference Include="Unity.InternalAPIEditorBridge.003">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.003.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VectorGraphics">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.VectorGraphics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEngineBridge.003">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.003.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VectorGraphics.Editor">
+ <HintPath>D:/UnityProjects/Labyrinth Puzzle Game/Library/ScriptAssemblies/Unity.VectorGraphics.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

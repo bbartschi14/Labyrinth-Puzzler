@@ -17,5 +17,5 @@ MonoBehaviour:
   unscramblePrefab: {fileID: 4027212966473489587, guid: 9e1801a85737271409d38b2d9b63204e, type: 3}
   clue: Harry
   answer: POTTER
-  isMissingLetter: 0
+  isMissingLetter: 1
   missingLetter: 82

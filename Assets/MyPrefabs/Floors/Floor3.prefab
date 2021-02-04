@@ -95,7 +95,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 349c25a087cb7474ca2c6ded30e2237f, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!1 &218554307902946437
 GameObject:
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: aa6061983ca0c6d448a82857730dfbc9, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!114 &8328142547720957383
 MonoBehaviour:
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: aa6061983ca0c6d448a82857730dfbc9, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!1 &4784797912534061209
 GameObject:
@@ -2928,7 +2928,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: aa6061983ca0c6d448a82857730dfbc9, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!114 &5651110068761080879
 MonoBehaviour:
@@ -4738,7 +4738,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: aa6061983ca0c6d448a82857730dfbc9, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!114 &4740247222526959604
 MonoBehaviour:
@@ -6014,7 +6014,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 349c25a087cb7474ca2c6ded30e2237f, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!114 &6350470284850744215
 MonoBehaviour:
@@ -6112,7 +6112,7 @@ MonoBehaviour:
   glowColor: {r: 1, g: 0.5765381, b: 0, a: 1}
   lockPrefab: {fileID: 9053036620110912184, guid: 3d53ff808e9a0e54a86e17a7a57d4700, type: 3}
   useSpecific: 1
-  specificPuzzle: {fileID: 11400000, guid: 349c25a087cb7474ca2c6ded30e2237f, type: 2}
+  specificPuzzle: {fileID: 11400000, guid: 6d9ff007f93e04b4392a3b7a7f946231, type: 2}
   puzzleType: 0
 --- !u!114 &8789083190421864803
 MonoBehaviour:
